@@ -1,0 +1,19 @@
+version: '3.1'
+
+networks:
+  goom_tr_myretail:
+    external:
+      name: goom_tr_myretail
+
+services: 
+  mongodb:
+    image: "mongodb"
+    container_name: "myretail_mongodb"
+    environment:
+      - MONGO_INITDB_DATABASE=MyRetailDb
+      - MONGO_INITDB_ROOT_USERNAME=goom
+      - MONGO_INITDB_ROOT_PASSWORD=candy
+    networks:
+      - goom_tr_myretail
+    ports:
+      - "27017-27019:27017-27019"
