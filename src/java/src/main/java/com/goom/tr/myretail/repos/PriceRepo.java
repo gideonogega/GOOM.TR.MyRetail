@@ -1,7 +1,5 @@
 package com.goom.tr.myretail.repos;
 
-import java.util.List;
-
 import com.goom.tr.myretail.models.Price;
 import com.goom.tr.myretail.repos.mongo.PricesRepository;
 import com.goom.tr.myretail.repos.mongo.models.DbPrice;
